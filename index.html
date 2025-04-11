@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lily's Cats</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    .cat-title {
+      font-size: 3rem;
+      text-align: center;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: hotpink;
+      background-color: lavenderblush;
+      padding: 20px;
+      border-radius: 10px;
+      letter-spacing: 2px;
+      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .carousel-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40vh;
+    }
+
+    .carousel-inner {
+      height: 300px;
+      width: 400px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .carousel-item img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 22rem;
+      margin: auto;
+    }
+
+    .card-img-top {
+      height: 240px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cat-title">Lily's Cats</div>
+
+  <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Welcome!</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Photos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Friends</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Cats</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item d-flex align-items-center" href="#"><img src="duchess.jpg" alt="Duchess" class="me-2 rounded-circle" style="width: 30px; height: 30px;">Duchess</a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="#"><img src="link.jpg" alt="Link" class="me-2 rounded-circle" style="width: 30px; height: 30px;">Link</a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="#"><img src="cheesecake.jpg" alt="Cheesecake" class="me-2 rounded-circle" style="width: 30px; height: 30px;">Cheesecake</a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="#"><img src="handrew.jpg" alt="Handrew" class="me-2 rounded-circle" style="width: 30px; height: 30px;">Handrew</a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="#"><img src="spooky.jpg" alt="Spooky" class="me-2 rounded-circle" style="width: 30px; height: 30px;">Spooky</a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="#"><img src="walter.jpg" alt="Walter" class="me-2 rounded-circle" style="width: 30px; height: 30px;">Walter</a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="#"><img src="rex.jpg" alt="Rex" class="me-2 rounded-circle" style="width: 30px; height: 30px;">Rex</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="p-5" style="background: linear-gradient(to bottom, rgb(190, 53, 122), rgba(190, 53, 122, 0.75), rgba(190, 53, 122, 0.5), rgba(190, 53, 122, 0.25), rgba(190, 53, 122, 0.1));">
+    <div class="carousel-container shadow p-3">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active"><img src="duchess.jpg" class="d-block" alt="duchess"></div>
+          <div class="carousel-item"><img src="link.jpg" class="d-block" alt="link"></div>
+          <div class="carousel-item"><img src="cheesecake.jpg" class="d-block" alt="cheesecake"></div>
+          <div class="carousel-item"><img src="handrew.jpg" class="d-block" alt="handrew"></div>
+          <div class="carousel-item"><img src="spooky.jpg" class="d-block" alt="spooky"></div>
+          <div class="carousel-item"><img src="walter.jpg" class="d-block" alt="walter"></div>
+          <div class="carousel-item"><img src="rex.jpg" class="d-block" alt="rex"></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="p-4 bg-white text-dark rounded shadow text-center mt-4">
+      I have seven, yes SEVEN! Amazing, wonderful, cats that I would love to share!
+    </div>
+
+    <div class="p-4 bg-black text-white rounded shadow text-center mt-4">
+      My cats names are Duchess, Link, Cheesecake, Handrew, Spooky, Walter and Rex. Each of my cats were born on a farm, but were taken in by my parents to give them a better life!
+    </div>
+
+    <div class="fs-1 text-dark text-center mt-4 fw-bold">
+      Meet my cats!
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-2">
+      <div class="col"><div class="card"><img src="duchess.jpg" class="card-img-top" alt="duchess"><div class="card-body"><h5 class="card-title">Duchess</h5><p class="card-text">The queen of all cats.</p></div></div></div>
+      <div class="col"><div class="card"><img src="link.jpg" class="card-img-top" alt="link"><div class="card-body"><h5 class="card-title">Link</h5><p class="card-text">Annoying but loving.</p></div></div></div>
+      <div class="col"><div class="card"><img src="cheesecake.jpg" class="card-img-top" alt="cheesecake"><div class="card-body"><h5 class="card-title">Cheesecake</h5><p class="card-text">Hates cat food.</p></div></div></div>
+      <div class="col"><div class="card"><img src="handrew.jpg" class="card-img-top" alt="handrew"><div class="card-body"><h5 class="card-title">Handrew</h5><p class="card-text">Something is off about this cat.</p></div></div></div>
+      <div class="col"><div class="card"><img src="spooky.jpg" class="card-img-top" alt="spooky"><div class="card-body"><h5 class="card-title">Spooky</h5><p class="card-text">Scary little girl.</p></div></div></div>
+      <div class="col"><div class="card"><img src="walter.jpg" class="card-img-top" alt="walter"><div class="card-body"><h5 class="card-title">Walter</h5><p class="card-text">BIG OLE BOY.</p></div></div></div>
+      <div class="col"><div class="card"><img src="rex.jpg" class="card-img-top" alt="rex"><div class="card-body"><h5 class="card-title">Rex</h5><p class="card-text">The most normal cat ever.</p></div></div></div>
+    </div>
+
+    <ul class="nav nav-underline mt-5">
+      <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Photos</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Friends</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
