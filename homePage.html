@@ -19,6 +19,26 @@
           letter-spacing: 2px;
           box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
         }
+
+        .carousel-container {
+         display: flex;
+         justify-content: center; 
+         align-items: center;     
+         height: 40vh;           
+        }
+
+        .carousel-inner {
+         height: 300px;
+         width: 400px;
+         padding: 10px;
+         box-sizing:border-box;
+        }
+
+        .carousel-item img {
+         object-fit: cover;
+         height: 100%;
+         width: 100%;
+        }
       </style>      
 </head>
 <body>
@@ -103,6 +123,41 @@
       rgba(190, 53, 122, 0.25),
       rgba(190, 53, 122, 0.1)
     );">
+    <div class="carousel-container">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="duchess.jpg" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="link.jpg" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="cheesecake.jpg" class="d-block" alt="...">
+            </div>
+              <div class="carousel-item">
+                <img src="handrew.jpg" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="spooky.jpg" class="d-block" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="walter.jpg" class="d-block" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="rex.jpg" class="d-block" alt="...">
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
     </div>      
 </body>
 </html>
